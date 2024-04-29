@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Application</title>
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+      body {
+        display: grid;
+        height: 100%;
+        width: 100%;
+
+        background: -webkit-linear-gradient(left, #a09ddf, #d28fa0);
+      }
+
+      button {
+        display: block;
+        margin: auto;
+        font-size: 24px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        color: #8edfb9;
+        background-color: #9d4249;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+
+      #options {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weather Application</h1>
+
+    <header class="header">
+      <nav class="navbar">
+        <a href="/home.html">Home</a>
+        <a href="/logout">Logout</a>
+      </nav>
+    </header>
+    <h3>Welcome {{user.name }}</h3>
+
+    <div id="options">
+      <button onclick="location.href='/Manual'">Manual</button>
+    </div>
+  </body>
+</html>
